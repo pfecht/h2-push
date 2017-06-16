@@ -1,0 +1,39 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Pascal Fecht - fecht.pascal@gmail.com" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>Test of HTTP 2.0 on App Engine</title>
+
+  <!-- Load webcomponents-loader.js to check and load any polyfills your browser needs -->
+  <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+  <link rel="import" href="bower_components/app-layout/app-layout.html">
+  <style is="custom-style">
+    :root {
+      --app-drawer-content-container: {
+        background: #EDEDED;
+      }
+    }
+    body {
+        @apply(--layout-fullbleed);
+        @apply(--paper-font-body1);
+        background: var(--primary-background-color);
+        color: var(--primary-text-color);
+    }
+    app-toolbar {
+        background-color: #1E88E5;
+        color: white;
+    }
+    .content {
+      padding: 24px;
+    }
+  </style>
+
+</head>  
+<body>
+  <h1>Testsite for H2 server push (mainly) for html imports</h1>
+  <p>This is a demo site which includes various Polymer elements (via html import) and tests the performance.</p>
+
+  <section>To test the performance without push use the ?nopush param.</section>
+</body>
+</html>
